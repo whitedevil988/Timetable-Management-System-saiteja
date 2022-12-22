@@ -3,15 +3,15 @@ from tkinter import ttk
 from tkinter import messagebox
 import sqlite3
 
-days = 5
-periods = 6
-recess_break_aft = 3 # recess after 3rd Period
+days = 6
+periods = 7
+recess_break_aft = 4 # recess after 3rd Period
 section = None
 butt_grid = []
 
 
-period_names = list(map(lambda x: 'Period ' + str(x), range(1, 6+1)))
-day_names = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday']
+period_names = list(map(lambda x: 'Period ' + str(x), range(1, 7+1)))
+day_names = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday']
 
 
 def update_p(d, p, tree, parent):
@@ -171,7 +171,7 @@ second_half.pack(side='left')
 
 recess = tk.Label(
     recess_frame,
-    text='R\n\nE\n\nC\n\nE\n\nS\n\nS',
+    text='B\n\nR\n\nE\n\nA\n\nK\n',
     font=('Consolas', 18, 'italic'),
     width=3,
     relief='sunken'

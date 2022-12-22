@@ -10,8 +10,8 @@ section = None
 butt_grid = []
 
 
-period_names = list(map(lambda x: 'Period ' + str(x), range(1, 6+1)))
-day_names = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday']
+period_names = list(map(lambda x: 'Period ' + str(x), range(1, 7+1)))
+day_names = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday']
 
 
 
