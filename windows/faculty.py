@@ -283,7 +283,7 @@ if __name__ == "__main__":
     # Label8
     tk.Label(
         subtk,
-        text='Initials:',
+        text='Subject:',
         font=('Consolas', 12)
     ).place(x=100, y=290)
 

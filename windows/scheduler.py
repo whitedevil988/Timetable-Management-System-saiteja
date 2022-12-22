@@ -24,7 +24,7 @@ def update_p(d, p, tree, parent):
             return
         row = tree.item(tree.selection()[0])['values']
         if row[0] == 'NULL' and row[1] == 'NULL':
-            conn.execute(f"DELETE FROM SCHEDULE WHERE ID='{section+str((d*periods)+p)}'")
+            conn.execute(f"DELETE FROM SCHEDULE WHERE ID='{section + str((d*periods)+p)}'")
             conn.commit()
             update_table()
             parent.destroy()
@@ -33,7 +33,7 @@ def update_p(d, p, tree, parent):
         conn.commit()
         print(row)
         conn.execute(f"REPLACE INTO SCHEDULE (ID, DAYID, PERIODID, SUBCODE, SECTION, FINI)\
-            VALUES ('{section+str((d*periods)+p)}', {d}, {p}, '{row[1]}', '{section}', '{row[0]}')")
+            VALUES ('{section + str((d*periods)+p)}', {d}, {p}, '{row[1]}', '{section}', '{row[0]}')")
         conn.commit()
         update_table()
 
@@ -81,7 +81,7 @@ def process_button(d, p):
     tree.column("one", width=70, stretch=tk.NO)
     tree.column("two", width=80, stretch=tk.NO)
     tree.heading('#0', text="")
-    tree.heading('one', text="Faculty")
+    tree.heading('one', text="Subject")
     tree.heading('two', text="Subject Code")
     
     cursor = conn.execute("SELECT FACULTY.INI, FACULTY.SUBCODE1, FACULTY.SUBCODE2, SUBJECTS.SUBCODE\
