@@ -171,7 +171,7 @@ second_half.pack(side='left')
 
 recess = tk.Label(
     recess_frame,
-    text='B\n\nR\n\nE\n\nA\n\nK\n'
+    text='B\n\nR\n\nE\n\nA\n\nK\n',
     font=('Consolas', 18, 'italic'),
     width=3,
     relief='sunken'
