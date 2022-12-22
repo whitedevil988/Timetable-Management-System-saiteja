@@ -45,10 +45,12 @@ m = tk.Tk()
 m.geometry('400x430')
 m.title('Welcome')
 
+m.iconbitmap('C:\\Users\\admin\\PycharmProjects\\Timetable-Management-System-saiteja1\\favicon (1).ico')
+
 tk.Label(
     m,
-    text='TIMETABLE MANAGEMENT SYSTEM',
-    font=('Consolas', 20, 'bold'),
+    text='MRCET',
+    font=('Consolas', 30, 'bold'),
     wrap=400
 ).pack(pady=20)
 
