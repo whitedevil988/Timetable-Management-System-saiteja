@@ -146,6 +146,8 @@ FINI CHAR(10) NOT NULL)')
 
 tt = tk.Tk()
 
+tt.iconbitmap('favicon (1).ico')
+
 tt.title('Scheduler')
 
 title_lab = tk.Label(

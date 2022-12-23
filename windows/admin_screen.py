@@ -13,6 +13,8 @@ def run_tt_f(): os.system('py windows\\timetable_fac.py')
 ad = tk.Tk()
 ad.geometry('500x430')
 
+ad.iconbitmap('favicon (1).ico')
+
 ad.title('Administrator')
 
 tk.Label(
