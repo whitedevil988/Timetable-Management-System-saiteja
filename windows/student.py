@@ -175,6 +175,7 @@ if __name__ == "__main__":
     subtk = tk.Tk()
     subtk.geometry('1000x470')
     subtk.title('Add/Update Students')
+    subtk.iconbitmap('favicon (1).ico')
 
     # Label1
     tk.Label(

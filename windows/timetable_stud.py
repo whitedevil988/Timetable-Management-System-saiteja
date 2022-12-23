@@ -234,6 +234,7 @@ if __name__ == "__main__":
 
     tt = tk.Tk()
     tt.title('Student Timetable')
+    tt.iconbitmap('favicon (1).ico')
 
 
     student_tt_frame(tt, section)

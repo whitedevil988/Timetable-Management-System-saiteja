@@ -230,6 +230,7 @@ if __name__ == "__main__":
 
     tt = tk.Tk()
     tt.title('Faculty Timetable')
+    tt.iconbitmap('favicon (1).ico')
 
     fac_tt_frame(tt, fini)
 
