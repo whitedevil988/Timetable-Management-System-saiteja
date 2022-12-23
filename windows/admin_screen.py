@@ -5,7 +5,7 @@ import threading
 
 def run_sub(): os.system('py windows\\subjects.py')
 def run_fac(): os.system('py windows\\faculty.py')
-def run_stud(): os.system('py windows\\student.py')
+#def run_stud(): os.system('py windows\\student.py')
 def run_sch(): os.system('py windows\\scheduler.py')
 def run_tt_s(): os.system('py windows\\timetable_stud.py')
 def run_tt_f(): os.system('py windows\\timetable_fac.py')
@@ -45,12 +45,12 @@ tk.Button(
     command=run_fac
 ).pack(pady=20)
 
-tk.Button(
-    modify_frame,
-    text='Students',
-    font=('Consolas'),
-    command=run_stud
-).pack(pady=20)
+#tk.Button(
+#    modify_frame,
+#    text='Students',
+#    font=('Consolas'),
+#    command=run_stud
+#).pack(pady=20)
 
 tt_frame = tk.LabelFrame(text='Timetable', font=('Consolas'), padx=20)
 tt_frame.place(x=250, y=100)
