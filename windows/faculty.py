@@ -47,7 +47,7 @@ def update_treeview():
     tree.place(x=530, y=100)
 
 
-# Parse and store data into database and treeview upon clcicking of the add button
+# Parse and store data into database and treeview upon clicking of the add button
 def parse_data():
     fid = str(fid_entry.get())
     passw = str(passw_entry.get())
@@ -188,6 +188,8 @@ if __name__ == "__main__":
     subtk = tk.Tk()
     subtk.geometry('1000x550')
     subtk.title('Add/Update Faculties')
+
+    subtk.iconbitmap('favicon (1).ico')
 
     # Label1
     tk.Label(
