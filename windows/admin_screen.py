@@ -49,7 +49,7 @@ tk.Button(
     modify_frame,
     text='Students',
     font=('Consolas'),
-    command=run_stud()
+    command=run_stud
 ).pack(pady=20)
 
 tt_frame = tk.LabelFrame(text='Timetable', font=('Consolas'), padx=20)
