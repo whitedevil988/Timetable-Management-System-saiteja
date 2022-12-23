@@ -12,7 +12,25 @@ def challenge():
 
     user = str(combo1.get())
 
-    if user == "Faculty":
+    if user == "Student":
+        cursor = conn.execute(f"SELECT PASSW, SECTION, NAME, ROLL FROM STUDENT WHERE SID='{id_entry.get()}'")
+        cursor = list(cursor)
+        if len(cursor) == 0:
+            messagebox.showwarning('Bad id', 'No such user found!')
+        elif passw_entry.get() != cursor[0][0]:
+            messagebox.showerror('Bad pass', 'Incorret Password!')
+        else:
+            nw = tk.Tk()
+            tk.Label(
+                nw,
+                text=f'{cursor[0][2]} \tSection: {cursor[0][1]}\tRoll No. : {cursor[0][3]}',
+                font=('Consolas', 12, 'italic'),
+            ).pack()
+            m.destroy()
+            timetable_stud.student_tt_frame(nw, cursor[0][1])
+            nw.mainloop()
+
+    elif user == "Faculty":
         cursor = conn.execute(f"SELECT PASSW, INI, NAME, EMAIL FROM FACULTY WHERE FID='{id_entry.get()}'")
         cursor = list(cursor)
         if len(cursor) == 0:
@@ -114,7 +132,7 @@ B1_show.pack(side=tk.LEFT, padx=15)
 
 combo1 = ttk.Combobox(
     m,
-    values=['Faculty', 'Admin']
+    values=['Student','Faculty', 'Admin']
 )
 combo1.pack(pady=15)
 combo1.current(0)
