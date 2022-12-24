@@ -67,7 +67,7 @@ m.title('Welcome')
 m.iconbitmap('favicon (1).ico')
 
 
-my_img=ImageTk.PhotoImage(Image.open("MRCET-Hyderabad-logo-removebg-preview.png"))
+my_img=ImageTk.PhotoImage(Image.open("logo_mallareddy.png"))
 my_label=Label(image=my_img)
 my_label.pack()
 
