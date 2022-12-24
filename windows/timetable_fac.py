@@ -80,6 +80,9 @@ def process_button(d, p):
     else:
         sec_li = subcode = subname = subtype = t = 'None'
 
+    details.title('Details')
+    details.iconbitmap('favicon (1).ico')
+
     tk.Label(details, text='Class Details', font=('Consolas', 15, 'bold')).pack(pady=15)
     tk.Label(details, text='Day: '+day_names[d], font=('Consolas'), anchor="w").pack(expand=1, fill=tk.X, padx=20)
     tk.Label(details, text='Period: '+str(p+1), font=('Consolas'), anchor="w").pack(expand=1, fill=tk.X, padx=20)

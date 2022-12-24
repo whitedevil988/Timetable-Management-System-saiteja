@@ -50,6 +50,8 @@ def process_button(d, p):
     print(d, p)
     add_p = tk.Tk()
     # add_p.geometry('200x500')
+    add_p.title('sub')
+    add_p.iconbitmap('favicon (1).ico')
 
     # get subject code list from the database
     cursor = conn.execute("SELECT SUBCODE FROM SUBJECTS")
