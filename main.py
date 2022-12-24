@@ -1,6 +1,8 @@
+from tkinter import *
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
+from PIL import ImageTk,Image
 import os, sys
 sys.path.insert(0, 'windows/')
 import timetable_stud
@@ -60,15 +62,19 @@ def challenge():
 
 m = tk.Tk()
 
-m.geometry('400x430')
+m.geometry('600x630')
 m.title('Welcome')
-
 m.iconbitmap('favicon (1).ico')
+
+
+my_img=ImageTk.PhotoImage(Image.open("MRCET-Hyderabad-logo-removebg-preview.png"))
+my_label=Label(image=my_img)
+my_label.pack()
 
 tk.Label(
     m,
-    text='MRCET',
-    font=('Consolas', 30, 'bold'),
+    text='Malla Reddy College of Engineering And Technology',
+    font=('arial', 20, 'bold'),
     wrap=400
 ).pack(pady=20)
 
