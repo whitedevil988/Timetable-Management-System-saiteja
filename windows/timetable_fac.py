@@ -104,6 +104,8 @@ def process_button(d, p):
 
 
 def fac_tt_frame(tt, f):
+    tt.title('Faculty Timetable')
+    tt.iconbitmap('favicon (1).ico')
     title_lab = tk.Label(
         tt,
         text='T  I  M  E  T  A  B  L  E',

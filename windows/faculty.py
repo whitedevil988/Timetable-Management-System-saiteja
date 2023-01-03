@@ -278,7 +278,7 @@ if __name__ == "__main__":
     name_entry = tk.Entry(
         subtk,
         font=('Consolas', 12),
-        width=25,
+        width=25,w
     )
     name_entry.place(x=260, y=250)
 
