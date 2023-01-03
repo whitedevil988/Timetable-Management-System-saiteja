@@ -278,8 +278,8 @@ if __name__ == "__main__":
     name_entry = tk.Entry(
         subtk,
         font=('Consolas', 12),
-        width=25,w
-    )
+        width=25)
+
     name_entry.place(x=260, y=250)
 
     # Label8
